@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aamir Syed</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <span class="nav-logo">AS</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="mailto:asyed93@gatech.edu" class="btn-nav">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="about">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Hi, I'm</p>
+      <h1 class="hero-name">Aamir Syed</h1>
+      <p class="hero-title">Computer Engineering @ Georgia Tech &nbsp;·&nbsp; Researcher &nbsp;·&nbsp; Builder</p>
+      <p class="hero-sub">
+        I build things at the intersection of embedded systems, satellite positioning, and software —
+        from RISC-V processors to AI-powered apps.
+      </p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn-primary">View My Work</a>
+        <a href="https://www.linkedin.com/in/aamir-syed-/" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">↓</div>
+  </header>
+
+  <!-- EDUCATION -->
+  <section class="section section-alt" id="education" aria-labelledby="edu-heading">
+    <div class="container">
+      <h2 class="section-title" id="edu-heading">Education</h2>
+      <div class="edu-card">
+        <div class="edu-left">
+          <h3>Georgia Institute of Technology</h3>
+          <p class="edu-degree">B.S. Computer Engineering &nbsp;·&nbsp; Minor in Mathematics</p>
+        </div>
+        <div class="edu-right">
+          <span class="tag">Atlanta, GA</span>
+          <span class="date">Aug 2024 – May 2027</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience" aria-labelledby="exp-heading">
+    <div class="container">
+      <h2 class="section-title" id="exp-heading">Experience</h2>
+      <div class="timeline">
+
+        <!-- MARGA Lab -->
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="job-title">Researcher</h3>
+              <p class="job-company">MARGA Lab</p>
+            </div>
+            <div class="job-meta">
+              <span class="tag">Atlanta, GA</span>
+              <span class="date">Aug 2025 – Apr 2026</span>
+            </div>
+          </div>
+          <ul class="job-bullets">
+            <li>Evaluated LEO satellite mega-constellations (Starlink) for PNT applications, focusing on signal resilience and Doppler-shift analysis for positioning in GPS-denied environments.</li>
+            <li>Engineered a high-precision positioning engine using the <strong>SGP4 algorithm</strong> to propagate TLE data, achieving a <strong>97.3% accuracy improvement</strong> over previous iterations.</li>
+            <li>Architected a hybrid positioning script fusing terrestrial cell tower triangulation with satellite elevation angles and TLE data to maintain coordinate integrity across diverse topographies.</li>
+            <li>Deployed and managed <strong>AWS EC2</strong> instances to host data-processing clusters for intensive orbital mechanics and signal latency simulations.</li>
+            <li>Conducted deep-packet inspection via <strong>Wireshark</strong> to analyze Starlink network traffic, identifying and resolving critical latency bottlenecks in the satellite-to-ground communication loop.</li>
+          </ul>
+        </article>
+
+        <!-- Silicon Jackets -->
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="job-title">Digital Design Engineer</h3>
+              <p class="job-company">Silicon Jackets</p>
+            </div>
+            <div class="job-meta">
+              <span class="tag">Atlanta, GA</span>
+              <span class="date">Aug 2025 – Jan 2026</span>
+            </div>
+          </div>
+          <ul class="job-bullets">
+            <li>Designed and verified custom <strong>RISC-V CPU architectures</strong>, contributing to tapeout of the BuzzCore processor.</li>
+            <li>Utilized <strong>SystemVerilog</strong> for efficient RTL design, simulation, and debugging of digital circuits.</li>
+            <li>Co-developed the ALU module for BuzzCore's second successful silicon tapeout.</li>
+          </ul>
+        </article>
+
+        <!-- UW -->
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="job-title">AI Research Assistant</h3>
+              <p class="job-company">University of Washington, Seattle</p>
+            </div>
+            <div class="job-meta">
+              <span class="tag">Seattle, WA</span>
+              <span class="date">Aug 2024 – Oct 2024</span>
+            </div>
+          </div>
+          <ul class="job-bullets">
+            <li>Investigated computational efficiencies of <strong>Spiking Neural Networks (SNNs)</strong> and Neuromorphic Computing to optimize energy consumption.</li>
+            <li>Evaluated SNN performance for Time Series Forecasting, leveraging temporal dynamics to improve prediction accuracy while reducing power overhead.</li>
+          </ul>
+        </article>
+
+        <!-- Jane Street -->
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="job-title">AMP Fellow</h3>
+              <p class="job-company">Jane Street</p>
+            </div>
+            <div class="job-meta">
+              <span class="tag">New York City, NY</span>
+              <span class="date">Jun 2024 – Aug 2024</span>
+            </div>
+          </div>
+          <ul class="job-bullets">
+            <li>Studied combinatorics, number theory, and algorithmic programming to solve complex computational problems.</li>
+            <li>Developed an automated trading bot for the electronic trading challenge, <strong>outperforming 75% of competitors</strong>.</li>
+            <li>Engineered a Wordle solver using <strong>Shannon entropy</strong> to quantify expected information gain, reducing average solve rate to ≈ 3.4 guesses.</li>
+            <li>Built a full-scale simulation of the Camel Up board game with complex game logic and recursive state management.</li>
+            <li>Designed and backtested betting heuristics using <strong>Monte Carlo simulations</strong> to determine optimal wagering strategies.</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects" aria-labelledby="proj-heading">
+    <div class="container">
+      <h2 class="section-title" id="proj-heading">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>ESP Spotify Display</h3>
+            <span class="date">Jan – Feb 2026</span>
+          </div>
+          <p class="project-desc">Embedded project that displays currently playing Spotify tracks on a screen via an AWS Lambda function.</p>
+          <ul class="project-bullets">
+            <li>Uses the SPI peripheral to communicate with the display</li>
+            <li>FreeRTOS tasks for non-blocking screen updates</li>
+          </ul>
+          <div class="project-tags">
+            <span class="chip">Embedded</span>
+            <span class="chip">Rust</span>
+            <span class="chip">AWS Lambda</span>
+            <span class="chip">FreeRTOS</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Active Directory Attack Simulation</h3>
+            <span class="date">Mar – Apr 2025</span>
+          </div>
+          <p class="project-desc">End-to-end privilege escalation simulation on a vulnerable Linux VM using real-world attack tooling.</p>
+          <ul class="project-bullets">
+            <li>Chained misconfigured SUID binaries + PATH hijacking to escalate to root</li>
+            <li>Reconnaissance with nmap; dynamic analysis with gdb</li>
+          </ul>
+          <div class="project-tags">
+            <span class="chip">Python</span>
+            <span class="chip">GDB</span>
+            <span class="chip">BloodHound</span>
+            <span class="chip">NMap</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>FitJacket</h3>
+            <span class="date">May – Jun 2025</span>
+          </div>
+          <p class="project-desc">Intelligent meal recommendation engine that generates personalized 7-day nutritional plans.</p>
+          <ul class="project-bullets">
+            <li>Integrated Google Gemini 1.5 Pro for prompt-engineered nutrition plans based on macros, allergies, and fitness goals</li>
+            <li>Mobile-first React dashboard with dynamic data visualizations</li>
+            <li>RESTful API backed by MongoDB for seamless data persistence</li>
+          </ul>
+          <div class="project-tags">
+            <span class="chip">React.js</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Gemini API</span>
+            <span class="chip">Docker</span>
+            <span class="chip">AWS</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <h2 class="section-title" id="skills-heading">Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Languages</h3>
+          <div class="chips">
+            <span class="chip">Java</span>
+            <span class="chip">Python</span>
+            <span class="chip">C/C++</span>
+            <span class="chip">SQL (Postgres)</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">HTML/CSS</span>
+            <span class="chip">VHDL</span>
+            <span class="chip">Verilog</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Frameworks</h3>
+          <div class="chips">
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Flask</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">JUnit</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Developer Tools</h3>
+          <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">Docker</span>
+            <span class="chip">TravisCI</span>
+            <span class="chip">GCP</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Bash</span>
+            <span class="chip">Wireshark</span>
+            <span class="chip">IDA Pro</span>
+            <span class="chip">openSSL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Libraries</h3>
+          <div class="chips">
+            <span class="chip">Pandas</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Matplotlib</span>
+            <span class="chip">Express</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">TensorFlow</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© 2026 Aamir Syed</p>
+      <div class="footer-links">
+        <a href="mailto:asyed93@gatech.edu">asyed93@gatech.edu</a>
+        <a href="https://www.linkedin.com/in/aamir-syed-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
