@@ -595,6 +595,104 @@ ul {
   }
 }
 
+/* ===== CONTACT ===== */
+.contact-sub {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.75rem;
+  color: var(--text-primary);
+  transition: border-color var(--transition), transform var(--transition), background var(--transition);
+  text-decoration: none;
+}
+
+.contact-card:hover {
+  border-color: var(--accent);
+  background: var(--surface-hover);
+  transform: translateY(-2px);
+  color: var(--text-primary);
+}
+
+.contact-icon {
+  font-size: 1.25rem;
+  color: var(--accent-light);
+  font-weight: 700;
+  width: 2rem;
+  text-align: center;
+}
+
+.contact-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+  line-height: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.copy-icon {
+  font-size: 1rem;
+}
+
+.copy-tooltip {
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity var(--transition);
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.copy-btn:hover .copy-tooltip {
+  opacity: 1;
+}
+
+.copy-btn.copied .copy-tooltip {
+  opacity: 1;
+  color: var(--accent-light);
+}
+
+.copy-btn:hover,
+.copy-btn.copied {
+  color: var(--accent-light);
+  background: var(--accent-glow);
+}
+
+.contact-value {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
 /* ===== FADE-IN ANIMATION ===== */
 .fade-in {
   opacity: 0;
