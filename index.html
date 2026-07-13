@@ -17,10 +17,12 @@
       <span class="nav-logo">AS</span>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#about-detail">About Me</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact" class="btn-nav">Contact</a></li>
+        <li><a href="Aamir_Syed_Resume_2028s.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav">Resume</a></li>
+        <li><a href="#contact" class="btn-nav btn-nav-outline">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -34,16 +36,57 @@
       <p class="hero-title">Computer Engineering @ Georgia Tech &nbsp;·&nbsp; Researcher &nbsp;·&nbsp; Builder</p>
       <p class="hero-sub">
         I build things at the intersection of embedded systems, satellite positioning, and software —
-        from RISC-V processors to AI-powered apps.
+        from RISC-V processors to AI-powered apps. Whether I'm propagating orbital data with the SGP4 algorithm,
+        training a chess engine on an HPC cluster, or wiring up an ESP32 to display my Spotify queue,
+        I'm drawn to problems that sit right at the edge of hardware and software.
       </p>
       <div class="hero-cta">
         <a href="#experience" class="btn-primary">View My Work</a>
+        <a href="Aamir_Syed_Resume_2028s.pdf" download class="btn-primary btn-resume" target="_blank" rel="noopener noreferrer">↓ Resume</a>
         <a href="https://www.linkedin.com/in/aamir-syed-/" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn</a>
         <a href="https://github.com/31465" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
       </div>
     </div>
     <div class="hero-scroll-hint" aria-hidden="true">↓</div>
   </header>
+
+  <!-- ABOUT -->
+  <section class="section" id="about-detail" aria-labelledby="about-heading">
+    <div class="container">
+      <h2 class="section-title" id="about-heading">About Me</h2>
+      <div class="about-body">
+        <p>
+          I'm a Computer Engineering student at Georgia Tech with a minor in Mathematics, graduating December 2027.
+          My work spans a wide range: I've written firmware in C++ for microcontrollers, designed digital circuits
+          in SystemVerilog for a real silicon tapeout, built full-stack web apps, and trained deep learning models
+          on GPU clusters. That breadth isn't accidental — I genuinely believe the most interesting engineering
+          happens at the seams between disciplines.
+        </p>
+        <p>
+          My coursework reflects that curiosity. Beyond the standard CS theory (Data Structures, Algorithms,
+          Discrete Math), I've taken Intro to Embedded Systems, GPU Programming, Malware Reverse Engineering,
+          Computer Security, and Advanced Malware Analysis. Each of those courses pushed me to think about
+          computing at a different layer of abstraction — from silicon timing constraints all the way up to
+          application-layer protocol analysis.
+        </p>
+        <p>
+          Outside the classroom, I've had the chance to work on research and engineering problems that actually
+          matter. At the MARGA Lab, I built infrastructure around LEO satellite constellations to explore
+          positioning in GPS-denied environments — work that required me to get comfortable with orbital mechanics,
+          AWS infrastructure, and CI/CD pipelines all at once. At Jane Street, I sharpened my algorithmic thinking
+          by building trading bots, entropy-based solvers, and Monte Carlo simulations under real competitive
+          pressure. And at the University of Washington, I got an early look at the efficiency frontier of
+          neuromorphic computing — a space I expect to matter a lot as energy constraints on AI hardware grow tighter.
+        </p>
+        <p>
+          When I'm not at a keyboard, I'm usually thinking about the next project. Right now that means
+          exploring the overlap between hardware security and machine learning — two fields that are increasingly
+          colliding in ways the industry isn't fully prepared for. If that sounds interesting to you too,
+          I'd love to talk.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <!-- EDUCATION -->
   <section class="section section-alt" id="education" aria-labelledby="edu-heading">
@@ -72,20 +115,19 @@
         <article class="timeline-item">
           <div class="timeline-header">
             <div>
-              <h3 class="job-title">Researcher</h3>
+              <h3 class="job-title">Software Engineering Intern</h3>
               <p class="job-company">MARGA Lab</p>
             </div>
             <div class="job-meta">
               <span class="tag">Atlanta, GA</span>
-              <span class="date">Aug 2025 – Apr 2026</span>
+              <span class="date">Jun 2025 – Apr 2026</span>
             </div>
           </div>
           <ul class="job-bullets">
-            <li>Evaluated LEO satellite mega-constellations (Starlink) for PNT applications, focusing on signal resilience and Doppler-shift analysis for positioning in GPS-denied environments.</li>
-            <li>Engineered a high-precision positioning engine using the <strong>SGP4 algorithm</strong> to propagate TLE data, achieving a <strong>97.3% accuracy improvement</strong> over previous iterations.</li>
-            <li>Architected a hybrid positioning script fusing terrestrial cell tower triangulation with satellite elevation angles and TLE data to maintain coordinate integrity across diverse topographies.</li>
-            <li>Deployed and managed <strong>AWS EC2</strong> instances to host data-processing clusters for intensive orbital mechanics and signal latency simulations.</li>
-            <li>Conducted deep-packet inspection via <strong>Wireshark</strong> to analyze Starlink network traffic, identifying and resolving critical latency bottlenecks in the satellite-to-ground communication loop.</li>
+            <li>Engineered a high-precision positioning system using <strong>Python</strong> and the <strong>SGP4 algorithm</strong> to propagate TLE data from LEO satellites, achieving a <strong>64% accuracy improvement</strong> over previous iterations.</li>
+            <li>Implemented a <strong>GitHub Actions CI/CD pipeline</strong> to automate Docker image builds, ECR pushes, and Kubernetes deployments on every commit to main.</li>
+            <li>Deployed and managed <strong>AWS EC2</strong> instances to host data-processing clusters and act as a remote server for Wireshark analysis.</li>
+            <li>Conducted deep-packet inspection via <strong>Wireshark</strong> to analyze satellite network traffic, identifying and resolving critical latency bottlenecks in the satellite-to-ground communication loop.</li>
           </ul>
         </article>
 
@@ -121,8 +163,8 @@
             </div>
           </div>
           <ul class="job-bullets">
-            <li>Investigated computational efficiencies of <strong>Spiking Neural Networks (SNNs)</strong> and Neuromorphic Computing to optimize energy consumption.</li>
-            <li>Evaluated SNN performance for Time Series Forecasting, leveraging temporal dynamics to improve prediction accuracy while reducing power overhead.</li>
+            <li>Utilized <strong>TensorFlow</strong> to measure computational efficiencies of <strong>Spiking Neural Networks (SNNs)</strong> and Neuromorphic Computing to optimize energy consumption.</li>
+            <li>Evaluated SNN performance specifically for Time Series Forecasting, leveraging temporal dynamics to improve prediction accuracy by <strong>7%</strong> while reducing power overhead.</li>
           </ul>
         </article>
 
@@ -130,7 +172,7 @@
         <article class="timeline-item">
           <div class="timeline-header">
             <div>
-              <h3 class="job-title">AMP Fellow</h3>
+              <h3 class="job-title">Software Engineering Fellow</h3>
               <p class="job-company">Jane Street</p>
             </div>
             <div class="job-meta">
@@ -144,6 +186,7 @@
             <li>Engineered a Wordle solver using <strong>Shannon entropy</strong> to quantify expected information gain, reducing average solve rate to ≈ 3.4 guesses.</li>
             <li>Built a full-scale simulation of the Camel Up board game with complex game logic and recursive state management.</li>
             <li>Designed and backtested betting heuristics using <strong>Monte Carlo simulations</strong> to determine optimal wagering strategies.</li>
+            <li>Built a <strong>J2EE</strong> web application using Java Servlets and JSP with JDBC for MySQL persistence, implementing MVC separation and session-based authentication.</li>
           </ul>
         </article>
 
@@ -158,11 +201,12 @@
       <div class="projects-grid">
 
         <article class="project-card">
+          <img src="chess.jpg" alt="Deep RL Chess Engine interface" class="project-img" />
           <div class="project-header">
             <h3>Deep RL Chess Engine</h3>
             <span class="date">Jan – Feb 2026</span>
           </div>
-          <p class="project-desc">Self-improving chess engine trained via self-play reinforcement learning with a full-stack web interface.</p>
+          <p class="project-desc">A self-improving chess engine trained entirely through self-play reinforcement learning, paired with a full-stack web interface for playing against it. The core challenge was designing a reward structure that encouraged long-term positional play rather than greedy short-term captures — getting that balance right took more iteration than the networking code.</p>
           <ul class="project-bullets">
             <li>Implemented a policy network in PyTorch enabling self-improving gameplay through self-play RL</li>
             <li>Integrated a React UI with a FastAPI backend; deployed GPU training on Georgia Tech's PACE-ICE HPC cluster</li>
@@ -176,40 +220,84 @@
         </article>
 
         <article class="project-card">
+          <img src="embedded.png" alt="ESP32 Spotify Display showing currently playing track" class="project-img" />
+          <div class="project-header">
+            <h3>ESP32 Spotify Display</h3>
+            <span class="date">Mar – Apr 2025</span>
+          </div>
+          <p class="project-desc">An embedded project that shows the currently playing Spotify track on a small display in real time. The system polls an AWS Lambda function that handles Spotify OAuth and returns the current track, keeping credentials off the device entirely. The display updates non-blocking so the UI stays responsive even during network delays.</p>
+          <ul class="project-bullets">
+            <li>Fetches currently playing track via an AWS Lambda function connected to the Spotify API</li>
+            <li>Uses the SPI peripheral to drive the display and FreeRTOS tasks for non-blocking screen updates</li>
+          </ul>
+          <div class="project-tags">
+            <span class="chip">C++</span>
+            <span class="chip">ESP32</span>
+            <span class="chip">FreeRTOS</span>
+            <span class="chip">AWS Lambda</span>
+            <span class="chip">SPI</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="aq.jpg" alt="ESP32 Air Quality Detector hardware" class="project-img" />
+          <div class="project-header">
+            <h3>ESP32 Air Quality Detector</h3>
+            <span class="date">2025</span>
+          </div>
+          <p class="project-desc">A multi-sensor embedded system built on the ESP32 that monitors air quality, humidity, and motion in real time. Sensor readings are sampled concurrently using FreeRTOS tasks and thresholds trigger alerts without blocking the main loop. The project deepened my understanding of I2C/SPI sensor interfacing and real-time scheduling constraints on resource-limited hardware.</p>
+          <ul class="project-bullets">
+            <li>Integrated air quality, DHT humidity/temperature, and PIR motion sensors with the ESP32</li>
+            <li>Used FreeRTOS tasks for concurrent, non-blocking sensor polling and threshold-based alerting</li>
+            <li>Communicated sensor data over serial and optionally streamed readings to a dashboard via Wi-Fi</li>
+          </ul>
+          <div class="project-tags">
+            <span class="chip">C++</span>
+            <span class="chip">ESP32</span>
+            <span class="chip">FreeRTOS</span>
+            <span class="chip">I2C</span>
+            <span class="chip">SPI</span>
+            <span class="chip">Embedded</span>
+          </div>
+        </article>
+
+        <article class="project-card">
           <div class="project-header">
             <h3>Active Directory Attack Simulation</h3>
             <span class="date">Mar – Apr 2025</span>
           </div>
-          <p class="project-desc">End-to-end privilege escalation simulation on a vulnerable Linux VM using real-world attack tooling.</p>
+          <p class="project-desc">End-to-end privilege escalation simulation on a vulnerable Linux VM using real-world attack tooling. The goal was to walk the full kill chain — from initial reconnaissance through root access — and document every step the way an attacker actually would, not just the textbook version.</p>
           <ul class="project-bullets">
             <li>Chained misconfigured SUID binaries + PATH hijacking to escalate to root</li>
-            <li>Reconnaissance with nmap; dynamic analysis with gdb</li>
+            <li>Reconnaissance with nmap; dynamic analysis with gdb and Ghidra</li>
           </ul>
           <div class="project-tags">
             <span class="chip">Python</span>
             <span class="chip">GDB</span>
+            <span class="chip">Ghidra</span>
             <span class="chip">BloodHound</span>
             <span class="chip">NMap</span>
           </div>
         </article>
 
         <article class="project-card">
+          <img src="charts.png" alt="FitJacket nutrition dashboard with charts" class="project-img" />
           <div class="project-header">
             <h3>FitJacket</h3>
             <span class="date">May – Jun 2025</span>
           </div>
-          <p class="project-desc">Intelligent meal recommendation engine that generates personalized 7-day nutritional plans.</p>
+          <p class="project-desc">An intelligent meal recommendation engine built with a team that generates personalized 7-day nutritional plans. Users input their macros, dietary restrictions, and fitness goals, and the app returns a full structured plan with recipes. The main engineering challenge was prompt-engineering Gemini to return consistently structured JSON across wildly different user inputs.</p>
           <ul class="project-bullets">
-            <li>Integrated Google Gemini 1.5 Pro for prompt-engineered nutrition plans based on macros, allergies, and fitness goals</li>
-            <li>Mobile-first React dashboard with dynamic data visualizations</li>
-            <li>RESTful API backed by MongoDB for seamless data persistence</li>
+            <li>Integrated Google Gemini 1.5 Pro via the Generative AI SDK for prompt-engineered nutrition plans</li>
+            <li>Built and documented a RESTful API bridging the React frontend with a SQL database</li>
+            <li>Interactive dashboard with Tailwind CSS featuring data visualizations and progress charts</li>
           </ul>
           <div class="project-tags">
             <span class="chip">React.js</span>
             <span class="chip">Node.js</span>
-            <span class="chip">MongoDB</span>
+            <span class="chip">Express.js</span>
+            <span class="chip">SQL</span>
             <span class="chip">Gemini API</span>
-            <span class="chip">Docker</span>
             <span class="chip">AWS</span>
           </div>
         </article>
@@ -245,8 +333,11 @@
           <div class="chips">
             <span class="chip">React</span>
             <span class="chip">Node.js</span>
+            <span class="chip">Express.js</span>
             <span class="chip">Flask</span>
             <span class="chip">FastAPI</span>
+            <span class="chip">.NET</span>
+            <span class="chip">LangChain</span>
           </div>
         </div>
 
@@ -255,12 +346,17 @@
           <div class="chips">
             <span class="chip">Git</span>
             <span class="chip">Docker</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Kubernetes</span>
             <span class="chip">IDA Pro</span>
+            <span class="chip">Ghidra</span>
             <span class="chip">Wireshark</span>
             <span class="chip">openSSL</span>
             <span class="chip">Bash</span>
             <span class="chip">Linux</span>
             <span class="chip">Intel Quartus</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Prometheus</span>
           </div>
         </div>
 
@@ -304,6 +400,7 @@
       <p>© 2026 Aamir Syed</p>
       <div class="footer-links">
         <a href="mailto:asyed93@gatech.edu">asyed93@gatech.edu</a>
+        <a href="Aamir_Syed_Resume_2028s.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="https://www.linkedin.com/in/aamir-syed-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/31465" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
