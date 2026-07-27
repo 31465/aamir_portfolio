@@ -438,7 +438,7 @@ ul {
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 4px;
   width: calc(100% + 3rem);
   margin: -1.5rem -1.5rem 0.75rem;
